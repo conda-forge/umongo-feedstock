@@ -1,5 +1,5 @@
 {% set name = "umongo" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Scille/umongo/archive/refs/tags/{{ version }}.tar.gz
-  sha256: de260478e157cba3ea8a865054fbbf76aee74da03f414d2f509cc0992c19823a
+  sha256: 775ee9518a08465737cd55264b50facb784262bb078e69057e856a6cde7f32db
 
 build:
   noarch: python
