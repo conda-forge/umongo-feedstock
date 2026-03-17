@@ -11,19 +11,21 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - marshmallow >=3.10.0
     - pymongo >=3.7.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - umongo
 
