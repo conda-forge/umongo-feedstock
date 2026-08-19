@@ -3,7 +3,7 @@ About umongo-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/umongo-feedstock/blob/main/LICENSE.txt)
 
-Home: https://mdolab-pyoptsparse.readthedocs-hosted.com/
+Home: https://umongo.readthedocs.io/
 
 Package license: MIT
 
