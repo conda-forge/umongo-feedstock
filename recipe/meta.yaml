@@ -28,7 +28,7 @@ test:
     - umongo
 
 about:
-  home: https://mdolab-pyoptsparse.readthedocs-hosted.com/
+  home: https://umongo.readthedocs.io/
   license: MIT
   license_family: MIT
   license_file: LICENSE
