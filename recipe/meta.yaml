@@ -28,13 +28,13 @@ test:
     - umongo
 
 about:
-  home: https://mdolab-pyoptsparse.readthedocs-hosted.com/
+  home: https://umongo.readthedocs.io/
   license: MIT
   license_family: MIT
   license_file: LICENSE
   summary: sync/async MongoDB ODM, yes.
   description: |
-    μMongo is a Python MongoDB ODM. It inception comes from two needs: the lack 
+    μMongo is a Python MongoDB ODM. Its inception comes from two needs: the lack 
     of async ODM and the difficulty to do document (un)serialization with 
     existing ODMs.
   doc_url: https://umongo.readthedocs.io/
