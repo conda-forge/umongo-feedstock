@@ -3,7 +3,7 @@ About umongo-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/umongo-feedstock/blob/main/LICENSE.txt)
 
-Home: https://mdolab-pyoptsparse.readthedocs-hosted.com/
+Home: https://umongo.readthedocs.io/
 
 Package license: MIT
 
@@ -13,7 +13,7 @@ Development: https://github.com/Scille/umongo
 
 Documentation: https://umongo.readthedocs.io/
 
-μMongo is a Python MongoDB ODM. It inception comes from two needs: the lack
+μMongo is a Python MongoDB ODM. Its inception comes from two needs: the lack
 of async ODM and the difficulty to do document (un)serialization with
 existing ODMs.
 
