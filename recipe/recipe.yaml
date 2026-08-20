@@ -1,0 +1,52 @@
+schema_version: 1
+
+context:
+  name: umongo
+  version: "4.0.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/Scille/umongo/archive/refs/tags/${{ version }}.tar.gz
+  sha256: 94e7fe2617b41ca22bad2ad748e511edfc4481df6e74a109d76a5f49b7ef9b3a
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - flit-core <4
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - marshmallow >=4.0.1,<5.0
+    - pymongo >=3.7.0
+
+tests:
+  - python:
+      imports:
+        - umongo
+      pip_check: false
+      python_version: ${{ python_min }}
+about:
+  license: MIT
+  license_file: LICENSE
+  summary: sync/async MongoDB ODM, yes.
+  description: |
+    μMongo is a Python MongoDB ODM. Its inception comes from two needs: the lack
+    of async ODM and the difficulty to do document (un)serialization with
+    existing ODMs.
+  homepage: https://umongo.readthedocs.io/
+  repository: https://github.com/Scille/umongo
+  documentation: https://umongo.readthedocs.io/
+
+extra:
+  recipe-maintainers:
+    - ewu63
+    - whophil
+    - lafrech
