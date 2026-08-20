@@ -17,7 +17,6 @@ Documentation: https://umongo.readthedocs.io/
 of async ODM and the difficulty to do document (un)serialization with
 existing ODMs.
 
-
 Current build status
 ====================
 
