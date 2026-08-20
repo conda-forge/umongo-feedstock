@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.10
     - pip
   run:
-    - python >=3.7
+    - python >=3.10
     - marshmallow >=3.10.0
     - pymongo >=3.7.0
 
